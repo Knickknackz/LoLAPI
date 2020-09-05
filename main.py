@@ -7,8 +7,8 @@ from cassiopeia import Champion
 import cassiopeia as cass
 
 #client = commands.Bot(command_prefix='$')
-#token = 'NzUxODcwMTU2NDU5NzM3MTE4.X1PXpg.HPBdv-yDUHyblZ002KjY7nwZ1fQ'
-riotKey = 'RGAPI-1fd8be60-c664-4c17-b9d9-6a6a10e6716e'
+token = os.environ.get('LOL_BOT_TOKEN')
+riotKey = os.environ.get('RIOT_API')
 
 cass.set_riot_api_key(riotKey)  # This overrides the value set in your configuration/settings.
 cass.set_default_region("NA")
